@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button type="button" class="btn">클릭</button>
+    <button type="button" class="btn2">클릭</button>
+    <img src="./m.png" alt="." class="b">
+    <img src="./Logo.png" alt="." class="a">
+
+    <script>
+        let btn = document.querySelector(".btn")
+        let btn2 = document.querySelector(".btn2")
+        let img1 = document.querySelector(".b")
+        let img2 = document.querySelector(".a")
+
+        let imb = {
+            imga: "./w.png",
+            imgb: "./t.png"
+        }
+        let imc = {
+            imga: "./m.png",
+            imgb: "./logo.png"
+        }
+
+        btn.addEventListener('click', function () {
+            img1.setAttribute('src', `${imb.imga}`)
+            img2.setAttribute('src', `${imb.imgb}`)
+        });
+
+        btn2.addEventListener('click', function () {
+            img1.setAttribute('src', `${imc.imga}`)
+            img2.setAttribute('src', `${imc.imgb}`)
+        });
+
+
+
+        $(window).resize(function () {
+            let size = $(window).innerHeight();
+
+            if (size < 767) {
+                asdasdasd.off()
+            }
+        })
+
+        let size = $(window).innerHeight();
+
+        if (size < 767) {
+            asdasdasd.off()
+        }
+    </script>
+
+
+</body>
+
+</html>

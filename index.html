@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+        }
+        .t_hidden{
+            display: block;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+        }
+        @media screen and (max-width:1200px) {
+            
+        }
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+
+    <h1>
+        <a href="#">
+            <img src="./Logo.png" alt="Logo">
+            <span class="t_hidden">스타벅스</span>
+        </a>
+    </h1>
+
+    <section>
+        <h2 class="t_hidden">item</h2>
+        <figure>
+            <picture>
+                <source srcset="m.png" media="(max-width:575px)">
+                <source srcset="t.png" media="(max-width:1200px)">
+                <source srcset="w.png" media="(min-width:1201px)">
+                <img src="./" alt="/">
+            </picture>
+        </figure>
+    </section>
+
+
+    
+
+
+</body>
+</html>
